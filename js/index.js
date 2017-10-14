@@ -75,8 +75,7 @@ $(document).ready(function($) {
                 data_row += '<td>' + show_ls[i].id + '</td>';
                 data_row += '<td>' + show_ls[i].userId + '</td>';
                 data_row += '<td>' + show_ls[i].title + '</td>';
-                $('#j_table').append('<tr class="info" style="display:none;>' + data_row + '</tr>');
-                $('.info').fadeIn(1500);
+                $('#j_table').append('<tr class="info">' + data_row + '</tr>');
                 $('#j_table').append('<tr class="body" style="display:none;"><td class="col-lg-1"></td><td class="col-lg-1"></td><td class="col-lg-6">'
                     + show_ls[i].body + '</td></tr>');
                 data_row = '';
@@ -91,6 +90,7 @@ $(document).ready(function($) {
     });
 
     $('#more').click(function(){
+        $('.info').empty();
         loadMore(load_cnt);
     });
 });
