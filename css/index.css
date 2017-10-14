@@ -1,0 +1,18 @@
+.info {
+    cursor: pointer;
+}
+
+a.back-top {
+    display: 0;
+    position: fixed;
+    right: 60px;
+    bottom: 40px;
+}
+
+.jumbotron {
+    background-image: url("moonmoon2D.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: center fixed;
+    
+}
