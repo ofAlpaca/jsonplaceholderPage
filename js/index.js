@@ -90,7 +90,6 @@ $(document).ready(function($) {
     });
 
     $('#more').click(function(){
-        $('.info').empty();
         loadMore(load_cnt);
     });
 });
