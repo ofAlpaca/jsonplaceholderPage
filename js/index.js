@@ -5,7 +5,7 @@ $(document).ready(function($) {
 
     function ajax_call_photots(ls) {
         $.ajax({
-            url: 'http://jsonplaceholder.typicode.com/posts',
+            url: 'https://jsonplaceholder.typicode.com/posts',
             type: 'GET'
         }).done(function(data){
             ls(data);
